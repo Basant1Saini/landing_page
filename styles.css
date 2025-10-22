@@ -1,17 +1,20 @@
-/* Reset and Base Styles */
+/* ===== RESET AND BASE STYLES ===== */
+/* Remove default margins and padding, set box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Base body styles with font and colors */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
-/* Typography */
+/* ===== TYPOGRAPHY ===== */
+/* Main heading styles */
 h1 {
     font-size: 3rem;
     font-weight: 700;
@@ -19,32 +22,37 @@ h1 {
     margin-bottom: 1rem;
 }
 
+/* Section heading styles */
 h2 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
+/* Subsection heading styles */
 h3 {
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
+/* Paragraph text styles */
 p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     color: #666;
 }
 
-/* Container and Centering */
+/* ===== LAYOUT AND CENTERING ===== */
+/* Main container for centering content */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers the container */
     padding: 0 2rem;
 }
 
-/* Header */
+/* ===== HEADER AND NAVIGATION ===== */
+/* Fixed header at top of page */
 .header {
     background: #fff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -54,27 +62,31 @@ p {
     z-index: 1000;
 }
 
+/* Navigation flexbox layout */
 .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Logo left, menu right */
+    align-items: center; /* Vertical centering */
     padding: 1rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Company logo styling */
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
     color: #2563eb;
 }
 
+/* Navigation menu layout */
 .nav-links {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
+/* Navigation link styles */
 .nav-links a {
     text-decoration: none;
     color: #333;
@@ -82,19 +94,22 @@ p {
     transition: color 0.3s;
 }
 
+/* Navigation link hover effect */
 .nav-links a:hover {
     color: #2563eb;
 }
 
-/* Main Content */
+/* ===== MAIN CONTENT ===== */
+/* Offset for fixed header */
 .main {
     margin-top: 80px;
 }
 
-/* Hero Section */
+/* ===== HERO SECTION ===== */
+/* Main hero section with flexbox layout */
 .hero {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertical centering */
     min-height: 90vh;
     padding: 4rem 2rem;
     max-width: 1200px;
@@ -102,16 +117,19 @@ p {
     gap: 4rem;
 }
 
+/* Hero text content area */
 .hero-content {
     flex: 1;
     text-align: center;
 }
 
+/* Main hero heading */
 .hero-title {
     color: #1f2937;
     margin-bottom: 1.5rem;
 }
 
+/* Hero subtitle with centered alignment */
 .hero-subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
@@ -120,6 +138,7 @@ p {
     margin-right: auto;
 }
 
+/* Button container with flexbox */
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -127,11 +146,13 @@ p {
     flex-wrap: wrap;
 }
 
+/* Hero image container */
 .hero-image {
     flex: 1;
     text-align: center;
 }
 
+/* Hero image styling with shadow */
 .hero-image img {
     max-width: 100%;
     height: auto;
@@ -139,7 +160,8 @@ p {
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
-/* Button Styling */
+/* ===== BUTTON STYLING ===== */
+/* Base button styles */
 .btn {
     padding: 0.75rem 2rem;
     border: none;
@@ -152,53 +174,62 @@ p {
     display: inline-block;
 }
 
+/* Primary button (filled) */
 .btn-primary {
     background: #2563eb;
     color: white;
 }
 
+/* Primary button hover effects */
 .btn-primary:hover {
     background: #1d4ed8;
-    transform: translateY(-2px);
+    transform: translateY(-2px); /* Lift effect */
     box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
 }
 
+/* Secondary button (outlined) */
 .btn-secondary {
     background: transparent;
     color: #2563eb;
     border: 2px solid #2563eb;
 }
 
+/* Secondary button hover effects */
 .btn-secondary:hover {
     background: #2563eb;
     color: white;
     transform: translateY(-2px);
 }
 
+/* Large button variant */
 .btn-large {
     padding: 1rem 3rem;
     font-size: 1.2rem;
 }
 
-/* Features Section */
+/* ===== FEATURES SECTION ===== */
+/* Features section with background */
 .features {
     padding: 6rem 0;
     background: #f8fafc;
 }
 
+/* Centered section title */
 .section-title {
     text-align: center;
     color: #1f2937;
     margin-bottom: 3rem;
 }
 
+/* Responsive grid for feature cards */
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
     gap: 2rem;
     margin-top: 3rem;
 }
 
+/* Individual feature card styling */
 .feature-card {
     background: white;
     padding: 2rem;
@@ -208,23 +239,27 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Feature card hover effect */
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift on hover */
 }
 
+/* Feature card image styling */
 .feature-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Maintain aspect ratio */
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 
+/* Feature card heading */
 .feature-card h3 {
     color: #1f2937;
 }
 
-/* CTA Section */
+/* ===== CALL-TO-ACTION SECTION ===== */
+/* CTA section with blue background */
 .cta {
     padding: 6rem 0;
     background: #2563eb;
@@ -232,18 +267,21 @@ p {
     text-align: center;
 }
 
+/* CTA heading */
 .cta h2 {
     color: white;
     margin-bottom: 1rem;
 }
 
+/* CTA description text */
 .cta p {
     color: #e0e7ff;
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-/* Footer */
+/* ===== FOOTER ===== */
+/* Footer with dark background */
 .footer {
     background: #1f2937;
     color: white;
@@ -251,13 +289,15 @@ p {
     padding: 2rem 0;
 }
 
+/* Footer text styling */
 .footer p {
     color: #9ca3af;
 }
 
-/* Media Queries - Responsive Design */
+/* ===== RESPONSIVE DESIGN - MEDIA QUERIES ===== */
+/* Tablet and mobile styles */
 @media (max-width: 768px) {
-    /* Typography adjustments */
+    /* Smaller typography for mobile */
     h1 {
         font-size: 2rem;
     }
@@ -266,7 +306,7 @@ p {
         font-size: 1.8rem;
     }
     
-    /* Navigation */
+    /* Mobile navigation adjustments */
     .nav {
         padding: 1rem;
     }
@@ -275,14 +315,15 @@ p {
         gap: 1rem;
     }
     
-    /* Hero section */
+    /* Mobile hero section - stack vertically */
     .hero {
-        flex-direction: column;
+        flex-direction: column; /* Stack content vertically */
         text-align: center;
         padding: 2rem 1rem;
         gap: 2rem;
     }
     
+    /* Show image first on mobile */
     .hero-content {
         order: 2;
     }
@@ -291,11 +332,13 @@ p {
         order: 1;
     }
     
+    /* Stack buttons vertically */
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
     
+    /* Full-width buttons on mobile */
     .btn {
         width: 100%;
         max-width: 300px;
@@ -319,8 +362,9 @@ p {
     }
 }
 
+/* Small mobile devices */
 @media (max-width: 480px) {
-    /* Further mobile optimizations */
+    /* Even smaller text for small screens */
     h1 {
         font-size: 1.8rem;
     }
@@ -353,20 +397,24 @@ p {
     }
 }
 
+/* Large desktop screens */
 @media (min-width: 1200px) {
-    /* Large screen optimizations */
+    /* Enhanced spacing for large screens */
     .hero {
         padding: 6rem 2rem;
     }
     
+    /* Left-align content on desktop */
     .hero-content {
         text-align: left;
     }
     
+    /* Left-align buttons on desktop */
     .hero-buttons {
         justify-content: flex-start;
     }
     
+    /* Remove auto margins for desktop */
     .hero-subtitle {
         margin-left: 0;
         margin-right: 0;
